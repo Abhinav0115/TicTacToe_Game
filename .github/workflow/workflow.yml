@@ -1,0 +1,26 @@
+name: Tic Tac Toe github deployment
+
+on:
+  push:
+    branches: 
+      - "master"
+
+jobs:
+  build: 
+    runs-on: ubantu-latest
+
+    strategy: 
+      matrix:
+        node-version: [15.x]
+    
+    steps:
+      - name: Checkout
+        user: actions/checkout@v1
+
+      - name: Install and build
+        run: npm install && npm run build
+      
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build 

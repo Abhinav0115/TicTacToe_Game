@@ -1,8 +1,8 @@
 {
     "homepage": "https://Abhinav0115.github.io/TicTacToe_Game",
-    "name": "lco-project-1",
+    "name": "tic_tac_toe",
     "version": "0.1.0",
-    "private": true,
+    "private": true,  
     "dependencies": {
         "@testing-library/jest-dom": "^5.16.5",
         "@testing-library/react": "^13.4.0",
