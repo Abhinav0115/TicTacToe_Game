@@ -101,7 +101,6 @@ const App = () => {
                 </span>
                 Game
             </h1>
-            <h3 className="mt-1 mb-4">using React.js</h3>
             <Row>
                 <Col md={6} className=" offset-med-3  centr">
                     {winMessage ? (
@@ -132,11 +131,6 @@ const App = () => {
                     </div>
                 </Col>
             </Row>
-            <h4 className="mt-5 mb-1 px-5">
-                This Game is build using Reactjs components like state, props,
-                React toastify, ReactStrap and it is responsive to any screen
-                size.
-            </h4>
         </Container>
     );
 };
